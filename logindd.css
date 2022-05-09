@@ -1,0 +1,35 @@
+.userid{
+height: 46px;
+width: 370px;
+border-radius: 46px;
+padding: 12px, 24px, 12px, 24px;
+
+}
+.cmslogin{
+font-family: Neue Montreal;
+font-size: 33px;
+font-weight: 200;
+/*line-height: 43px;
+letter-spacing: 0em;*/
+
+
+}
+
+.photoid{
+    max-width: 100%;
+    height: auto;
+    margin: 20px 5px 0px 21px;
+}
+.forgetpas{
+    float: right;
+}
+
+.loginbox{
+    margin: 20px 5px 0px 140px;
+
+}
+/*img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 14px 15px 2px 110px;
+}*/
