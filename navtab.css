@@ -5,21 +5,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 :root{
-                    
---body-color: #E4E9F7;
---sidebar-color: #FFF;
---primary-color: #695CFE;
---primary-color-light: #F6F5FF;
---toggle-color: #DDD;
---text-color: #707070;
-
-                
---tran-03: all 0.2s ease;
---tran-03: all 0.3s ease;
---tran-04: all 0.3s ease;
---tran-05: all 0.3s ease;
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;              
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
 }
 
 body{
@@ -30,7 +26,7 @@ body{
     background-color: var(--primary-color);
     color: #fff;
 }
- .sidebar{
+.sidebar{
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +40,6 @@ body{
 .sidebar.close{
     width: 88px;
 }
-
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -52,13 +47,11 @@ body{
     align-items: center;
     margin-top: 10px;
 }
-
 .sidebar header .image,
 .sidebar .icon{
     min-width: 60px;
     border-radius: 6px;
 }
-
 .sidebar .icon{
     min-width: 60px;
     border-radius: 6px;
@@ -68,27 +61,23 @@ body{
     justify-content: center;
     font-size: 20px;
 }
-
 .sidebar .text,
 .sidebar .icon{
     color: var(--text-color);
     transition: var(--tran-03);
 }
-
 .sidebar .text{
     font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;   
 }
-
 .sidebar.close .text{
     opacity: 0;
 }
 .sidebar header{
     position: relative;
 }
-
 .sidebar header .image-text{
     display: flex;
     align-items: center;
@@ -97,18 +86,15 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 .sidebar .menu{
     margin-top: 40px;
 }
-
 .sidebar li.menu-box{
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
 }
-
 .sidebar li.menu-box input{
     height: 100%;
     width: 100%;
@@ -133,12 +119,9 @@ body{
     text-decoration: none;
     transition: var(--tran-03);
 }
-
 .sidebar li a:hover{
     background-color: orangered;
 }
-
-
 .sidebar .menu-bar{
     height: calc(100% - 55px);
     display: flex;
@@ -166,7 +149,6 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
-
 .home{
     position: absolute;
     top: 0;
@@ -174,8 +156,7 @@ body{
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
-    background-color: #FFF
-    /* transition: var(--tran-05); */
+    background-color: #FFF   
 }
 .home .text{
     font-size: 30px;
@@ -183,86 +164,72 @@ body{
     color: var(--text-color);
     padding: 12px 60px;
 }
-
 .sidebar.close~.home{
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
 }
-
-
-/*//table page ka css hain
-*/
 .button1 {
-  background-color: rgb(245, 245, 245);
-  color: #9694A1;
-  padding: 10px 32px 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 45px;
-  /* outline: #4CAF50 solid 10px; */
-  /*box-shadow: 10px 23px 20px 7px rgba(255, 255, 255, 0.997);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);*/
+    background-color: rgb(245, 245, 245);
+    color: #9694A1;
+    padding: 10px 32px 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 45px;
 }
-
 .button2 {
-  background-color: rgb(245, 245, 245);
-  color: #9694A1;
-  /* border-color: #AE864A; */
-  padding: 10px 32px 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px -5px;
-  cursor: pointer;
-  border-radius: 45px;
+    background-color: rgb(245, 245, 245);
+    color: #9694A1;
+    padding: 10px 32px 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px -5px;
+    cursor: pointer;
+    border-radius: 45px;
 }
-
 .serachbox{
-  padding: 9px 33px 9px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 45px;
-  width: 30%;
+    padding: 9px 33px 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 45px;
+    width: 30%;
 }
-
 .butdel {
-  background-color: #9694A1;
-  color: white;
-  padding: 9px 20px 9px 21px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 25px;
-  cursor: pointer;
-  border-radius: 45px;
+    background-color: #9694A1;
+    color: white;
+    padding: 9px 20px 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 25px;
+    cursor: pointer;
+    border-radius: 45px;
 }
-
 .btnadd {
-  float: right;
-  background-color: #AE864A;
-  color: white;
-  padding: 9px 20px 9px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px -2px;
-  cursor: pointer;
-  border-radius: 45px;
+    float: right;
+    background-color: #AE864A;
+    color: white;
+    padding: 9px 20px 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px -2px;
+    cursor: pointer;
+    border-radius: 45px;
 }
-
 .indexhead{
     color: #9694A1;
     font-family: Neue Montreal;
@@ -277,44 +244,34 @@ body{
     top: 15px;
     border-radius: nullpx;
 }
-
 .btbg{
-  background-color: #D3D3D3
-
+    background-color: #D3D3D3
 }
 .button1:hover {
-  background-color: #fff;
-  color: #AE864A;
-  border-color: #AE864A;
-  
-}
-.button2:hover {
-  background-color: #fff;
-  color: #AE864A;
-  border-color: #AE864A;
-  
-}
-
-.button1:focus 
- {
-     border:0.1em solid  #AE864A; 
-     color:#AE864A;
-     outline:#AE864A ;
-
+    background-color: #fff;
+    color: #AE864A;
+    border-color: #AE864A;
   }
-
-  .icon{
+.button2:hover {
+    background-color: #fff;
+    color: #AE864A;
+    border-color: #AE864A;  
+}
+.button1:focus {
+    border:0.1em solid  #AE864A; 
+    color:#AE864A;
+    outline:#AE864A ;
+}
+.icon{
     padding-right: 8px;
 }
 .minoanhrad{
-  font-size: 30px;
-  font-weight: 500;
-  color: #707070;
-  padding: 12px 6px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #707070;
+    padding: 12px 6px;
 }
-
-
 .menu-links{
-	margin-left: -48px;
+    margin-left: -48px;
     margin-bottom: 1rem;
 }
